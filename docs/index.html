@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="수업 자료, 과제 제출, 공지사항을 정리하는 수업 웹사이트입니다." />
+  <title>Classroom Archive</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro" class="intro" aria-label="Intro animation">
+    <p id="typeText" class="type-text" aria-live="polite"></p>
+  </div>
+
+  <header id="siteHeader" class="site-header hidden">
+    <a class="logo" href="#home" aria-label="Go to home">Seagull    </a>
+
+    <button id="menuToggle" class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="navMenu" class="nav-menu" aria-label="Main navigation">
+      <a href="#documents" data-section="documents">Documents</a>
+      <a href="#submit" data-section="submit">Submit</a>
+      <a href="#notice" data-section="notice">Notice</a>
+    </nav>
+  </header>
+
+  <main id="mainContent" class="main hidden">
+    <section id="home" class="hero section active-section">
+      <p class="eyebrow">Hello World!</p>
+      <h1>Recommend The Title</h1>
+      <p class="hero-text">
+        from Seagull.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#documents" data-section="documents">자료 보기</a>
+        <a class="button secondary" href="#submit" data-section="submit">과제 제출</a>
+      </div>
+    </section>
+
+    <section id="documents" class="section content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Archive</p>
+        <h2>Documents</h2>
+      </div>
+
+      <div class="toolbar" aria-label="Document controls">
+        <label class="search-box" for="documentSearch">
+          <span>Search</span>
+          <input id="documentSearch" type="search" placeholder="자료명, 설명, 카테고리 검색" autocomplete="off" />
+        </label>
+
+        <label class="select-box" for="categoryFilter">
+          <span>Category</span>
+          <select id="categoryFilter">
+            <option value="all">All</option>
+          </select>
+        </label>
+
+        <label class="select-box" for="sortOrder">
+          <span>Sort</span>
+          <select id="sortOrder">
+            <option value="latest">Latest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="documentCount" class="result-count" aria-live="polite"></p>
+
+      <div id="documentList" class="card-grid"></div>
+    </section>
+
+    <section id="submit" class="section content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Submission</p>
+        <h2>Submit</h2>
+        <p>링크에 맞게 제출해주세요.</p>
+      </div>
+
+      <div id="assignmentList" class="card-grid"></div>
+    </section>
+
+    <section id="notice" class="section content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Updates</p>
+        <h2>Notice</h2>
+        <!-- <p>수업 일정, 과제 마감, 자료 업데이트를 공지합니다.</p> -->
+      </div>
+
+      <div id="noticeList" class="stack-list"></div>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="site-footer hidden">
+    <p>© <span id="year"></span> Classroom Archive. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
