@@ -36,7 +36,7 @@ window.siteData = {
       file: "Files/Dataset/matplotlib_student_practice_dataset.csv"
     },
     {
-      title: "Files/Dataset/pandas_students_analysis.cs",
+      title: "pandas_students_analysis.csv",
       category: "Python",
       date: "2026.05.01",
       description: "Pandas 라이브러리를 활용한 실습 자료입니다.",
