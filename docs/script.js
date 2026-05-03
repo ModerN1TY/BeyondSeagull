@@ -1,8 +1,3 @@
-// ==============================
-// Classroom Archive - script.js
-// 기능 코드입니다. 평소에는 data.js만 수정하면 됩니다.
-// ==============================
-
 const siteData = window.siteData || {
   documents: [],
   assignments: [],
