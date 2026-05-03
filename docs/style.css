@@ -206,6 +206,11 @@ h3 {
   line-height: 1.12;
   letter-spacing: -0.06em;
 }
+.card h3,
+.card p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 
 h1 {
   max-width: 830px;
