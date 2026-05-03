@@ -1,8 +1,3 @@
-// ==============================
-// Classroom Archive - data.js
-// 앞으로 자료, 과제 제출, 공지는 이 파일만 수정하면 됩니다.
-// ==============================
-
 window.siteData = {
   documents: [
     // {
@@ -15,30 +10,37 @@ window.siteData = {
     {
       title: "Pandas 라이브러리 자료",
       category: "Python",
-      date: "2026.05.03",
+      date: "2026.05.01",
       description: "Pandas를 활용한 데이터 분석 기초 자료입니다.",
       file: "Files/Lecture/Pandas Lecture.pdf"
     },
     {
       title: "Matplotlib 라이브러리 자료",
       category: "Python",
-      date: "2026.05.03",
+      date: "2026.05.01",
       description: "Matplotlib을 활용한 데이터 시각화 기초 자료입니다.",
-      file: "Files/Lecture/Matplotlib Lecture.pdf"
+      file: "Files/Lecture/Matplot Lecture.pdf"
     },
     {
-      title: "Pandas 실습 자료",
+      title: "school_store_sales.csv",
       category: "Python",
-      date: "2026.05.03",
+      date: "2026.05.01",
       description: "Pandas 라이브러리를 활용한 실습 자료입니다.",
       file: "Files/Dataset/school_store_sales.csv"
     },
     {
-      title: "Matplotlib 실습 자료",
+      title: "matplotlib_student_practice_dataset.csv",
       category: "Python",
-      date: "2026.05.03",
+      date: "2026.05.01",
       description: "Matplotlib 라이브러리를 활용한 실습 자료입니다.",
       file: "Files/Dataset/matplotlib_student_practice_dataset.csv"
+    },
+    {
+      title: "Files/Dataset/pandas_students_analysis.cs",
+      category: "Python",
+      date: "2026.05.01",
+      description: "Pandas 라이브러리를 활용한 실습 자료입니다.",
+      file: "Files/Dataset/pandas_students_analysis.csv"
     }
   ],
 
